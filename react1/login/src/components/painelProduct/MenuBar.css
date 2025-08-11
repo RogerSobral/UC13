@@ -1,0 +1,14 @@
+.menuBar ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    gap: 5px;
+}
+
+.menuBar ul li{
+    background-color: white ;
+}
+
+.menuBar ul li:hover{
+    color: rgb(134, 134, 126);
+}

@@ -1,22 +1,21 @@
-import Texto from "./components/Texto"
-import { Botao } from "./components/Botao"
-import "./App.css"
-
-
+import './App.css'
+import ControlsPainelADM from './pages/ControlsPainelADM'
+import TelaLogin from './pages/TelaLogin'
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// align-items: center;
+// height: 100vh;
 
 function App() {
-
+ 
 
   return (
-    <div className="tela">
-        <Texto/>
-        <input type="text" />
-        <Botao/>
-
-    </div>
-      
-
-
+   <div> 
+    
+  <ControlsPainelADM/>
+  
+  </div>
   )
 }
 

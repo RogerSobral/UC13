@@ -1,0 +1,81 @@
+/* #barra {
+    background-color: beige;
+    height: 100vh;
+    width: 40px;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+
+#barra:hover {
+    width: 250px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: beige;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.texto {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+}
+
+#barra:hover .texto {
+    opacity: 1;
+    visibility: visible;
+} */
+
+
+#barra {
+    background-color: beige;
+    height: 100vh;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: beige;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.texto {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+}
+
+#barra[style*="width: 150px"] .texto {
+    opacity: 1;
+    visibility: visible;
+}
