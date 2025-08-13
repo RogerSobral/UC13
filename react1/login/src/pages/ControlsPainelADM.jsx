@@ -14,9 +14,9 @@ const ControlsPainelADM = () => {
         <h1>Tela Relatorio</h1>
     </div>
     </>),
-    produto:(<>
+    estoque:(<>
         <div className='configPainel'>
-            <h1 className='titlePage'>Produto</h1>
+            <h1 className='titlePage'>Estoque</h1>
             <PainelProduct/>
         </div>
     

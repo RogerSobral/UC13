@@ -22,9 +22,9 @@ const MenuBar = ({setActionPainelProduct}) => {
 
                     <li  onClick={()=> setActionPainelProduct("entrada")}  ><GoPackageDependents/>  Entrada</li>
 
-                    <li onClick={()=> setActionPainelProduct("saida")}><LuPackageMinus/> Saida</li>
+                    <li onClick={()=> setActionPainelProduct("consulta")}><LuPackageMinus/> Consulta</li>
 
-                    <li onClick={()=> setActionPainelProduct("estoque")} ><TbPackages/> Estoque</li>
+                    <li onClick={()=> setActionPainelProduct("relatorio")} ><TbPackages/> Relatórios</li>
                 </ul>
             </div>
   )

@@ -1,6 +1,12 @@
 import {React,useState} from 'react'
-import MenuBar from '../components/painelProduct/MenuBar'
-import PainelMainClassificacaoFiscal from '../components/painelProduct/PainelMainClassificacaoFiscal';
+import MenuBar from '../components/painelEstoque/MenuBar'
+import PainelMainClassificacaoFiscal from '../components/painelEstoque/PainelMainClassificacaoFiscal';
+import PainelMainProduto from '../components/painelEstoque/PainelMainProduto';
+import PainelMainFornecedor from '../components/painelEstoque/PainelMainFornecedor';
+import PainelMainNotaFiscal from '../components/painelEstoque/PainelMainNotaFiscal';
+import PainelMainEntrada from '../components/painelEstoque/PainelMainEntrada';
+
+
 const PainelProduct = () => {
 
     const [actionPainelProduct,setActionPainelProduct]=useState("classificacaoFiscal");
@@ -8,23 +14,15 @@ const PainelProduct = () => {
 
     const painelsProduct={
         classificacaoFiscal:(<PainelMainClassificacaoFiscal/>),
-        addProdutos:(<div>
-            <h1>Tela Add Produtos</h1>
+        addProdutos:(<PainelMainProduto/>),
+         fornecedor:(<PainelMainFornecedor/>),
+        notaFiscal:(<PainelMainNotaFiscal/>),
+        entrada:(<PainelMainEntrada/>),
+        consulta:(<div>
+            <h1>Consulta</h1>
         </div>),
-         fornecedor:(<div>
-            <h1>Tela Fornecedor</h1>
-        </div>),
-        notaFiscal:(<div>
-            <h1>Tela Nota fiscal</h1>
-        </div>),
-        entrada:(<div>
-            <h1>Tela entrada</h1>
-        </div>),
-        saida:(<div>
-            <h1>Tela saída</h1>
-        </div>),
-        estoque:(<div>
-            <h1>Tela estoque</h1>
+        relatorio:(<div>
+            <h1>Relatorio</h1>
         </div>),
 
     }

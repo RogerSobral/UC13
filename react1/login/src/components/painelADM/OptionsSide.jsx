@@ -20,9 +20,9 @@ const OptionsSide = ({setActionPainel}) => {
           <span className="material-icons bar-chart-icon">bar_chart</span>
           <span className="texto">Relatorio</span>
         </li>
-        <li onClick={()=>handleClick("produto")}>
+        <li onClick={()=>handleClick("estoque")}>
           <span className="material-icons inventory-2-icon">inventory_2</span>
-          <span className="texto">Produtos</span>
+          <span className="texto">Estoque</span>
         </li>
         <li onClick={()=>handleClick("usuario")}>
           <span className="material-icons">account_circle</span>
