@@ -6,6 +6,7 @@ import PainelMainFornecedor from '../components/painelEstoque/PainelMainForneced
 import PainelMainNotaFiscal from '../components/painelEstoque/PainelMainNotaFiscal';
 import PainelMainEntrada from '../components/painelEstoque/PainelMainEntrada';
 import PainelMainConsulta from '../components/painelEstoque/PainelMainConsulta';
+import PainelMainRelatorio from '../components/painelEstoque/PainelMainRelatorio';
 
 
 const PainelProduct = () => {
@@ -14,15 +15,14 @@ const PainelProduct = () => {
 
 
     const painelsProduct={
+        
         classificacaoFiscal:(<PainelMainClassificacaoFiscal/>),
         addProdutos:(<PainelMainProduto/>),
          fornecedor:(<PainelMainFornecedor/>),
         notaFiscal:(<PainelMainNotaFiscal/>),
         entrada:(<PainelMainEntrada/>),
         consulta:(<PainelMainConsulta/>),
-        relatorio:(<div>
-            <h1>Relatorio</h1>
-        </div>),
+        relatorio:(<PainelMainRelatorio/>),
 
     }
 

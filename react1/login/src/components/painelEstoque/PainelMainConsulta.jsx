@@ -1,22 +1,20 @@
 import {useState} from 'react';
 import "./PainelMainConsulta.css";
 import { CiSearch } from "react-icons/ci";
+import { RxUpdate } from "react-icons/rx";
 
 const PainelMainConsulta = () => {
     const [filtroDescricao,setFiltroDescricao]=useState("");
     const [filtroCodigoInterno,setfiltroCodigoInterno]=useState("");
-    const [filtroCodigoBarra,setFiltroCodigoBarra]=useState("");
     const [filtroClassificacaoFiscal,setFiltroClassificacaoFiscal]=useState("");
 
 
     const listaNcm=[
-        {cod:"0101.21.00"},
-        {cod:"0101.29.00"},
-        {cod:"0102.10.10"},
-        {cod:"0102.10.90"},
-        {cod:"0101.21.00"},
-        {cod:"0101.29.00"},
-        {cod:"0102.10.10"}
+        {cod:"8471.30.34"},
+        {cod:"8471.60.25"},
+        {cod:"8471.60.25"},
+        {cod:"8528.72.00"},
+        {cod:"8443.31.00"},
     ]
 
     const listaProdutos = [
@@ -71,7 +69,7 @@ const PainelMainConsulta = () => {
     return(  
         prod.codigoInterno.toLowerCase().includes(filtroCodigoInterno.toLowerCase())
      &&
-    (filtroDescricao ? prod.produto.toLowerCase().includes( filtroDescricao) : true) 
+    (filtroDescricao ? prod.produto.toLowerCase().includes( filtroDescricao.toLowerCase()) : true) 
     &&
     (filtroClassificacaoFiscal ? prod.ncm === filtroClassificacaoFiscal : true)
         
@@ -100,12 +98,6 @@ const PainelMainConsulta = () => {
             onChange={(e)=>setfiltroCodigoInterno(e.target.value)}
             />
 
-            <input 
-            type="text"
-            placeholder='Código Barra' 
-            value={filtroCodigoBarra}
-            onChange={(e)=>setFiltroCodigoBarra(e.target.value)}
-            />
            
 
             <select
@@ -120,7 +112,7 @@ const PainelMainConsulta = () => {
 
             </select>
 
-            <button> <CiSearch />  Pesquisar</button>
+            <button><RxUpdate/> <span>Atualizar Tela</span></button>
 
         </div>
         

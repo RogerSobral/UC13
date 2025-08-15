@@ -1,0 +1,48 @@
+.containerConsulta {
+    padding: 20px;
+  }
+  
+  .filtro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .filtro input,
+  .filtro select {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  .filtro button{
+    background-color: rgb(107, 163, 52);
+    width: 150px;
+  }
+
+  .filtro button:hover{
+    background-color: rgb(125, 185, 65);
+   
+  }
+
+  .filtro button span{
+    margin-left: 8px;
+  }
+  
+  .containerTableConsulta table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+  }
+  
+  .containerTableConsulta th,
+  .containerTableConsulta td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .containerTableConsulta th {
+    background-color: #f2f2f2;
+  }
