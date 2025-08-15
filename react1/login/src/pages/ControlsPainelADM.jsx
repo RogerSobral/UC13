@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import OptionsSide from '../components/painelADM/OptionsSide'
-import PainelProduct from './PainelProduct';
+import PainelEstoque from "./PainelEstoque";
 
 import "./ControlsPainelADM.css"
 
@@ -17,7 +17,7 @@ const ControlsPainelADM = () => {
     estoque:(<>
         <div className='configPainel'>
             <h1 className='titlePage'>Estoque</h1>
-            <PainelProduct/>
+        <PainelEstoque/>
         </div>
     
         </>),
